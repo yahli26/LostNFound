@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F0E3"
+    android:elevation="6dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roundcorners"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/ibClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:background="#00FFFFFF"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/clearbutton" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvItem"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>

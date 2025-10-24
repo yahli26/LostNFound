@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/btnShare"
+        android:icon="@drawable/ic_share"
+        android:title="btnShare"
+        android:visible="false"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/btnReset"
+        android:icon="@drawable/clearbutton"
+        android:title="btnReset"
+        android:visible="false"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/btnUpload"
+        android:icon="@drawable/uploadbutton"
+        android:title="btnUpload"
+        android:visible="false"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/btnSave"
+        android:icon="@drawable/saveicon"
+        android:title="btnSave"
+        android:visible="false"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/btnDelete"
+        android:icon="@drawable/deleteicon"
+        android:title="btnDelete"
+        android:visible="false"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/btnSearch"
+        android:icon="@drawable/searchicon"
+        android:title="btnSearch"
+        android:visible="false"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/btnReport"
+        android:icon="@drawable/reporticon"
+        android:title="btnReport"
+        android:visible="false"
+        app:showAsAction="always"></item>
+
+
+<item android:title="Main Menu"
+    app:showAsAction="always"
+    android:icon="@drawable/ic_more">
+        <menu>
+            <item android:id="@+id/MyAccount"
+                android:title="My Account"
+                android:icon="@drawable/ic_account"
+                app:showAsAction="never"/>
+
+            <item android:id="@+id/Notification"
+                android:title="Notification"
+                android:icon="@drawable/ic_notification"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/AboutUs"
+                android:title="About Us"
+                android:icon="@drawable/infomenuicon"
+                app:showAsAction="never"/>
+
+            <item android:id="@+id/RecommendedHardware"
+                android:title="Recommended Hardware"
+                app:showAsAction="never"/>
+
+            <item android:id="@+id/SignOut"
+                android:title="Sign Out"
+                android:icon="@drawable/signouticon"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+    </menu>
+

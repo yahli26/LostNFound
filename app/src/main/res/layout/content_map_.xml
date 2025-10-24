@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8EE"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Map_Activity"
+    tools:showIn="@layout/activity_map_">
+
+
+
+    <Button
+        android:id="@+id/btnCreateLost"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnCreateFound"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/roundcorners"
+        android:onClick="onClick"
+        android:text="Create Lost"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCreateFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/roundcorners"
+        android:onClick="onClick"
+        android:text="Create Found"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/ibUsersListActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="65dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        android:visibility="gone"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/usersgrayicon" />
+
+    <ImageButton
+        android:id="@+id/ibMyListGrayActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/mylistgray" />
+
+    <ImageButton
+        android:id="@+id/ibHomeActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="189dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/homeorange" />
+
+    <ImageButton
+        android:id="@+id/ibSearchGrayActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="314dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/searchgray" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/btnRefresh"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="113dp"
+        android:layout_marginRight="13dp"
+        android:background="#D5FFFFFF"
+        android:elevation="4dp"
+        android:onClick="onClick"
+        android:padding="4dp"
+        app:srcCompat="@drawable/refreshicon" />
+
+
+</RelativeLayout>

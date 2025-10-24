@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8EE"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Create_Item_Activity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/roundcorners"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/ivIconHeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/addbutton"
+                android:padding="10dp"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/tvHeadLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Create"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/cbIsRelevant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onClick"
+        android:text="Is item NOT relevant?"
+        android:textSize="14dp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/asteriskicon" />
+
+        <Spinner
+            android:id="@+id/spnType"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="20dp"
+            android:autofillHints="Type"
+            android:background="@android:drawable/btn_dropdown"
+            android:duplicateParentState="false"
+            android:spinnerMode="dropdown"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/ivItem"
+            android:layout_width="95dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:maxWidth="80dp"
+            android:maxHeight="53dp"
+            android:onClick="onClick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/asteriskicon" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:ems="10"
+            android:hint="Description (specific details)"
+            android:inputType="textCapSentences"
+            android:maxLength="34"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:elevation="4dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/tvExplanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Attributes which have * sign are required to fill" />
+
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="30dp"
+        android:elevation="7dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/ibSearchGrayActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:onClick="onClick"
+            android:src="@drawable/searchgray" />
+
+        <ImageButton
+            android:id="@+id/ibHomeActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:onClick="onClick"
+            android:src="@drawable/homegray" />
+
+        <ImageButton
+            android:id="@+id/ibMyListGrayActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:onClick="onClick"
+            android:src="@drawable/mylistgray" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

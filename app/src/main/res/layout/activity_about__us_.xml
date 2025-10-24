@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8EE"
+    android:orientation="vertical"
+    tools:context=".About_Us_Activity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/roundcorners"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/infoicon"
+            android:padding="10dp"
+            android:tint="@color/white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="About Us"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAboutUs"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:elevation="7dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibSearchGrayActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:onClick="onClick"
+            android:src="@drawable/searchgray" />
+
+        <ImageButton
+            android:id="@+id/ibHomeActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:onClick="onClick"
+            android:src="@drawable/homegray" />
+
+        <ImageButton
+            android:id="@+id/ibMyListGrayActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:onClick="onClick"
+            android:src="@drawable/mylistgray" />
+
+        <ImageButton
+            android:id="@+id/ibUsersListActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:onClick="onClick"
+            android:src="@drawable/usersgrayicon"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmap"
+    android:orientation="vertical"
+    android:padding="32dp"
+    tools:context=".Permission_Activity">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Permission Request"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:text="Lost And Found Project needs permission to access device location to provide required services. Please allow the permission"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/btn_grant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_shadow"
+        android:text="Grant Permission"
+        android:textAllCaps="false"
+        android:textSize="18dp" />
+
+</LinearLayout>

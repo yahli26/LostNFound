@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/backgroundLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvDateRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:foregroundGravity="top"
+        android:text="DateRegistration"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="28dp"
+        android:foregroundGravity="top"
+        android:text="PhoneNumber"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tvMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@id/tvPhoneNumber"
+        android:foregroundGravity="top"
+        android:maxLines="2"
+        android:text="Mail"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/tvUserName"
+        android:maxLines="1"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-1dp"
+        android:text="UserName"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#353232"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvSumUploads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@id/tvDateRegistration"
+        android:foregroundGravity="top"
+        android:maxLines="2"
+        android:text="SumUploads"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16dp" />
+
+</RelativeLayout>

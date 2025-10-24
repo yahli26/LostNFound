@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LostNFound</string>
+    <string name="google_maps_api"></string>
+    <string name="title_activity_point__on__map_">Point_On_Map_Activity</string>
+    <string name="title_activity_point_on_map_">PointOnMap_Activity</string>
+    <string name="title_activity_map_">Map_Activity</string>
+</resources>

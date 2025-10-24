@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmap"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".Show_List_Activity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roundcorners"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvHeadLine3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="List"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/circle"
+                android:padding="4dp"
+                android:src="@drawable/listicon"
+                android:tint="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switchRelevant"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundcorners"
+            android:text="My List"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:ems="10"
+            android:hint="search for description"
+            android:inputType="textCapSentences"
+            android:maxLength="34"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switchLF"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundcorners"
+            android:text="Lost N Found"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/spnType"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:autofillHints="Type"
+            android:background="@android:drawable/btn_dropdown"
+            android:duplicateParentState="false"
+            android:spinnerMode="dropdown"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spnOrderBy"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:autofillHints="Type"
+        android:background="@android:drawable/btn_dropdown"
+        android:duplicateParentState="false"
+        android:spinnerMode="dropdown"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/lvResult"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#FAF8EE"
+            android:elevation="7dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibSearchGrayActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onClick2"
+                android:src="@drawable/searchgray" />
+
+            <ImageButton
+                android:id="@+id/ibSearchOrangeActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:src="@drawable/searchorange" />
+
+            <ImageButton
+                android:id="@+id/ibHomeActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onClick2"
+                android:src="@drawable/homegray" />
+
+            <ImageButton
+                android:id="@+id/ibMyListGrayActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onClick2"
+                android:src="@drawable/mylistgray" />
+
+            <ImageButton
+                android:id="@+id/ibMyListOrangeActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="7dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:src="@drawable/mylistorange" />
+
+            <ImageButton
+                android:id="@+id/ibUsersListActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onClick2"
+                android:src="@drawable/usersgrayicon"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ibUsersListOrangeActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:src="@drawable/usersicon"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    </LinearLayout>

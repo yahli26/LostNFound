@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2CF0EAC1"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/securityicon" />
+
+
+    <TextView
+        android:id="@+id/tvHeadLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Security"
+        android:textColor="#EEA301"
+        android:textSize="36dp" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="105dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:ems="10"
+            android:hint="Your Question"
+            android:inputType="textMultiLine"
+            android:maxLength="80"
+            android:maxLines="3"
+            android:outlineProvider="paddedBounds"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:singleLine="false"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/etAnswer"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="Your Answer (One Word)"
+        android:maxLength="13"
+        android:maxLines="1"
+        android:outlineProvider="paddedBounds"
+        android:singleLine="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvExplanation"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif-condensed-light" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/roundcorners"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+
+</LinearLayout>

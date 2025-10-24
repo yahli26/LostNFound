@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2CF0EAC1"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/tipicon" />
+
+    <TextView
+        android:id="@+id/tvHeadLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tip"
+        android:textColor="#EEA301"
+        android:textSize="40dp" />
+
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:text="Tip: 0"
+        android:textSize="30sp" />
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/bubbleSeekBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        app:bsb_max="100"
+        app:bsb_min="0"
+        app:bsb_progress="0"
+        app:bsb_second_track_color="@color/bestColor"
+        app:bsb_section_count="5"
+        app:bsb_show_progress_in_float="false"
+        app:bsb_show_section_mark="true"
+        app:bsb_show_section_text="true"
+        app:bsb_show_thumb_text="false"
+        app:bsb_always_show_bubble="false"
+        app:bsb_hide_bubble="true"
+        app:bsb_track_color="@color/quantum_grey500" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/roundcorners"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+
+</LinearLayout>

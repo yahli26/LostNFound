@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0px"
+    android:paddingRight="0px"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PointOnMap_Activity"
+    tools:showIn="@layout/activity_point_on_map_">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/marker"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:translationY="-20dp"/>
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/bubbleSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/btnConfirm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="20dp"
+        app:bsb_always_show_bubble="false"
+        app:bsb_hide_bubble="true"
+        app:bsb_max="200"
+        app:bsb_min="20"
+        app:bsb_progress="0"
+        app:bsb_second_track_color="@color/bestColor"
+        app:bsb_section_count="8"
+        app:bsb_show_progress_in_float="false"
+        app:bsb_show_section_mark="true"
+        app:bsb_show_section_text="true"
+        app:bsb_show_thumb_text="false"
+        app:bsb_track_color="@color/quantum_grey500" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/roundcorners"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="btnConfirm"
+        android:text="Confirm"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvRadius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="115dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Radius: 20 meters"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="28dp" />
+
+</RelativeLayout>
